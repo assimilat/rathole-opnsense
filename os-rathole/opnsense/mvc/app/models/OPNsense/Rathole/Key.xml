@@ -1,0 +1,30 @@
+<model>
+    <mountpoint>OPNsense.Rathole.Key</mountpoint>
+    <version>1.0.0</version>
+    <items>
+        <key type="ArrayField">
+            <keyuuid type="UUIDField">
+                <default></default>
+                <type>string</type>
+            </keyuuid>
+            <enabled type="BooleanField">
+                <default>1</default>
+                <help>Enable or disable this private key</help>
+            </enabled>
+            <name type="TextField">
+                <default></default>
+                <required>true</required>
+                <help>Key name</help>
+            </name>
+            <privatekey type="TextField">
+                <default></default>
+                <required>true</required>
+                <help>Rathole private key</help>
+            </privatekey>
+            <description type="TextField">
+                <default></default>
+                <help>Key description</help>
+            </description>
+        </key>
+    </items>
+</model>

@@ -1,0 +1,29 @@
+<form>
+    <fields>
+        <enabled>
+            <type>checkbox</type>
+            <label>Enable</label>
+            <help>Enable or disable this Rathole server</help>
+        </enabled>
+        <name>
+            <type>text</type>
+            <label>Name</label>
+            <help>Server name</help>
+        </name>
+        <listenport>
+            <type>text</type>
+            <label>Listen Port</label>
+            <help>Listen port for the Rathole server</help>
+        </listenport>
+        <accesstoken>
+            <type>text</type>
+            <label>Access Token</label>
+            <help>Access token for the Rathole server</help>
+        </accesstoken>
+        <description>
+            <type>text</type>
+            <label>Description</label>
+            <help>Server description</help>
+        </description>
+    </fields>
+</form>

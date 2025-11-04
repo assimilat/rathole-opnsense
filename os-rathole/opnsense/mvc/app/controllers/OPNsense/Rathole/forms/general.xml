@@ -1,0 +1,20 @@
+<form>
+    <fields>
+        <enabled>
+            <type>checkbox</type>
+            <label>Enable Rathole</label>
+            <help>Enable or disable the Rathole service</help>
+        </enabled>
+        <log_level>
+            <type>dropdown</type>
+            <label>Log Level</label>
+            <help>Set the Rathole log level</help>
+            <options>
+                <option value="debug">Debug</option>
+                <option value="info">Info</option>
+                <option value="warn">Warning</option>
+                <option value="error">Error</option>
+            </options>
+        </log_level>
+    </fields>
+</form>

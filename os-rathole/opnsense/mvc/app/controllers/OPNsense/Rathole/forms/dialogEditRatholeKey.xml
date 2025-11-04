@@ -1,0 +1,24 @@
+<form>
+    <fields>
+        <enabled>
+            <type>checkbox</type>
+            <label>Enable</label>
+            <help>Enable or disable this private key</help>
+        </enabled>
+        <name>
+            <type>text</type>
+            <label>Name</label>
+            <help>Key name</help>
+        </name>
+        <privatekey>
+            <type>text</type>
+            <label>Private Key</label>
+            <help>Rathole private key</help>
+        </privatekey>
+        <description>
+            <type>text</type>
+            <label>Description</label>
+            <help>Key description</help>
+        </description>
+    </fields>
+</form>

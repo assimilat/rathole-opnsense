@@ -1,0 +1,35 @@
+<model>
+    <mountpoint>OPNsense.Rathole.Server</mountpoint>
+    <version>1.0.0</version>
+    <items>
+        <server type="ArrayField">
+            <serveruuid type="UUIDField">
+                <default></default>
+                <type>string</type>
+            </serveruuid>
+            <enabled type="BooleanField">
+                <default>1</default>
+                <help>Enable or disable this Rathole server</help>
+            </enabled>
+            <name type="TextField">
+                <default></default>
+                <required>true</required>
+                <help>Server name</help>
+            </name>
+            <listenport type="PortField">
+                <default></default>
+                <required>true</required>
+                <help>Listen port for the Rathole server</help>
+            </listenport>
+            <accesstoken type="TextField">
+                <default></default>
+                <required>true</required>
+                <help>Access token for the Rathole server</help>
+            </accesstoken>
+            <description type="TextField">
+                <default></default>
+                <help>Server description</help&gt>
+            </description>
+        </server>
+    </items>
+</model>

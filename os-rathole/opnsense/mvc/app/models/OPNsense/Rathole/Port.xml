@@ -1,0 +1,37 @@
+<model>
+    <mountpoint>OPNsense.Rathole.Port</mountpoint>
+    <version>1.0.0</version>
+    <items>
+        <port type="ArrayField">
+            <portuuid type="UUIDField">
+                <default></default>
+                <type>string</type>
+            </portuuid>
+            <enabled type="BooleanField">
+                <default>1</default>
+                <help>Enable or disable this Rathole port</help>
+            </enabled>
+            <name type="TextField">
+                <default></default>
+                <required>true</required>
+                <help>Port name</help>
+            </name>
+            <portnumber type="PortField">
+                <default></default>
+                <required>true</required>
+                <help>Port number</help>
+            </portnumber>
+            <key_ref type="ModelRelationField">
+                <Model>OPNsense.Rathole.Key</Model>
+                <ValidationMessage>Related Key not found</ValidationMessage>
+                <multiple>false</multiple>
+                <required>true</required>
+                <help>Associated Private Key</help>
+            </key_ref>
+            <description type="TextField">
+                <default></default>
+                <help>Port description</help>
+            </description>
+        </port>
+    </items>
+</model>

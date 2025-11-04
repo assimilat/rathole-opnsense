@@ -1,0 +1,36 @@
+<form>
+    <fields>
+        <enabled>
+            <type>checkbox</type>
+            <label>Enable</label>
+            <help>Enable or disable this Rathole port</help>
+        </enabled>
+        <name>
+            <type>text</type>
+            <label>Name</label>
+            <help>Port name</help>
+        </name>
+        <portnumber>
+            <type>text</type>
+            <label>Port Number</label>
+            <help>Port number</help>
+        </portnumber>
+        <key_ref>
+            <type>dropdown</type>
+            <label>Private Key</label>
+            <help>Associated Private Key</help>
+            <query>
+                <reference>rathole.key.key</reference>
+                <fields>
+                    <uuid>keyuuid</uuid>
+                    <name>name</name>
+                </fields>
+            </query>
+        </key_ref>
+        <description>
+            <type>text</type>
+            <label>Description</label>
+            <help>Port description</help>
+        </description>
+    </fields>
+</form>

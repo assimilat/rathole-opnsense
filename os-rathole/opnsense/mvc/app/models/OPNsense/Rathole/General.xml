@@ -1,0 +1,20 @@
+<model>
+    <mountpoint>OPNsense.Rathole</mountpoint>
+    <version>1.0.0</version>
+    <items>
+        <enabled type="BooleanField">
+            <default>0</default>
+            <help>Enable Rathole service</help>
+        </enabled>
+        <log_level type="ChoiceField">
+            <default>info</default>
+            <help>Rathole log level</help>
+            <choices>
+                <choice value="debug">Debug</choice>
+                <choice value="info">Info</choice>
+                <choice value="warn">Warning</choice&gt>
+                <choice value="error">Error</choice>
+            </choices>
+        </log_level>
+    </items>
+</model>

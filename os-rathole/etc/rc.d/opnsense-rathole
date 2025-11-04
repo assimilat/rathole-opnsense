@@ -1,0 +1,33 @@
+#!/bin/sh
+#
+# PROVIDE: opnsense-rathole
+# REQUIRE: SERVERS
+# KEYWORD: shutdown
+
+. /etc/rc.subr
+
+name=osrathole
+
+stop_cmd=osrathole_stop
+start_cmd=osrathole_start
+rcvar=osrathole_enable
+
+load_rc_config opnsense-rathole
+
+[ -z "$osrathole_enable" ] && osrathole_enable="NO"
+
+# stop rathole
+osrathole_stop()
+{
+	echo "stopping rathole"
+	/usr/local/opnsense/scripts/OPNsense/Rathole/service.sh stop
+}
+
+# start rathole
+osrathole_start()
+{
+	echo "starting rathole"
+	/usr/local/opnsense/scripts/OPNsense/Rathole/service.sh start
+}
+
+run_rc_command $1

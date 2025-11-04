@@ -1,0 +1,29 @@
+<menu>
+  <Services>
+    <Rathole>
+      <name>Rathole</name>
+      <icon>fa fa-rocket</icon>
+      <order>80</order>
+      <Rathole_General>
+        <name>General</name>
+        <url>/ui/rathole/general</url>
+        <order>10</order>
+      </Rathole_General>
+      <Rathole_Servers>
+        <name>Servers</name>
+        <url>/ui/rathole/server</url>
+        <order>20</order>
+      </Rathole_Servers>
+      <Rathole_Keys>
+        <name>Private Keys</name>
+        <url>/ui/rathole/key</url>
+        <order>30</order>
+      </Rathole_Keys>
+      <Rathole_Ports>
+        <name>Ports</name>
+        <url>/ui/rathole/port</url>
+        <order>40</order>
+      </Rathole_Ports>
+    </Rathole>
+    <Services>
+    </menu>
